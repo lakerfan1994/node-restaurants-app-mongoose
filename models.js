@@ -41,7 +41,7 @@ restaurantSchema.virtual('grade').get(function() {
 // exposes *some* of the fields we want from the underlying data
 restaurantSchema.methods.serialize = function() {
 
-  return {
+   return {
     id: this._id,
     name: this.name,
     cuisine: this.cuisine,
